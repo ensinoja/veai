@@ -3,6 +3,7 @@ package frank.projeto.com.etanolxgasolina;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -24,20 +25,17 @@ public class profissional extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitresultado(View view) {
-        float soma = 0;
-
+        float soma;
+       String convertendo ="";
         float etanol = R.id.etanol;
         float gasolina = R.id.gasolina;
 
 
-        soma = etanol / gasolina;
+        soma = etanol + gasolina;
+        convertendo =String.valueOf(soma );
+        displayres(convertendo);
 
-        if (soma > 0.7) {
-            displayres("Melhor Opção Gasolina");
-        } else {
 
-            displayres("Melhor Opção Etanol");
-        }
 
 
     }
