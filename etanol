@@ -26,8 +26,11 @@ public class profissional extends AppCompatActivity {
     public void submitresultado(View view) {
         float soma = 0;
 
+        float etanol = R.id.etanol;
+        float gasolina = R.id.gasolina;
 
-        soma = R.id.etanol / R.id.gasolina;
+
+        soma = etanol / gasolina;
 
         if (soma > 0.7) {
             displayres("Melhor Opção Gasolina");
